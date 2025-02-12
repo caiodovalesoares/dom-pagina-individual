@@ -1,0 +1,422 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #3E579E
+}
+
+header {
+    background-color: white;
+    height: 109px;
+    border: 0px;
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px black;
+}
+
+h1 {
+    width: 500px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+header > nav {
+    width: 200px;
+    margin-left: auto;
+}
+
+nav > a {
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+nav > a:hover {
+    background-color: rgba(0, 0, 0, 0.23);
+    border-radius: 5px 5px;
+    transition: ease-in-out 0.3s;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    padding: 7px;
+    width: 95%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px black;
+}
+
+.introduction {
+    display: flex;
+    margin: 5px;
+    border: 2px #3E579E solid;
+    border-radius: 10px;
+    box-shadow: 3px 3px black;
+}
+
+img {
+    margin: 20px;
+}
+
+main > div > p {
+    margin: auto;
+    padding: 20px;
+}
+
+main > div {
+    height: 318px;
+}
+
+main > div > div > h2 {
+    margin: 20px 0px;
+}
+
+.curiosities {
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 20px;
+    height: auto;
+    justify-content: space-between;
+}
+
+.curiosities > .hobbies > h2 {
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.curiosities > .hobbies > p {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.curiosities > div > p > span {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.165);
+    width: 8vw;
+    height: 100px;
+    margin-left: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.452);
+    text-align: center;
+    align-content: center;
+}
+
+.curiosities > div > p > span:hover {
+    background-color: #3E579E;
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+
+.drake {
+    background-image: url(images/drake.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.theweeknd {
+    background-image: url(images/theweeknd.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.frank {
+    background-image: url(images/frank-ocean.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.daniel {
+    background-image: url(images/daniel-caesar.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.travis {
+    background-image: url(images/travis-scott.jpg);
+    background-size: cover;
+    color: white;
+}
+
+span[class]:not([class=""]):hover {
+    transform: scale(1.05);
+    transition: ease-in-out 0.3s;
+}
+
+.curiosities > .top5 > h2 {
+    margin-bottom: 5px;
+}
+
+.curiosities > .top5 > p {
+    display: flex;
+}
+
+.top5 > p > span > a {
+    color: white;
+    text-decoration: none;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.feedback > h2 {
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    padding: 2px;
+    text-align: center;
+    border-radius: 3px;
+    height: 7vh;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+}
+
+button {
+    width: 10vw;
+    background-color: rgba(0, 0, 0, 0.165);
+    border: none;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #3E579E;
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.comment {
+    border: 1px solid #3E579E;
+    border-radius: 5px;
+    box-shadow: -1px -1px black;
+    margin-bottom: 10px;
+    padding: 10px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.comment > h2, .comment > p {
+    margin-bottom: 5px;
+}
+
+.comment > p {
+    word-break: break-all;
+}
+
+footer {
+    background-color: white;
+    height: 70px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+footer > nav {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > nav > p {
+    display: flex;
+}
+
+.contact {
+    color: black;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.165);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.contact:hover {
+    background-color: #3E579E;
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+
+footer > nav > p img {
+    width: 32px;
+    height: 32px;
+}
+
+@media(max-width: 900px) and (min-width: 510px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        display: flex;
+        margin-top: 10px;
+        align-content: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introduction {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }   
+
+    .introduction > img {
+        margin: 10px auto;
+        width: 30vw;
+    }
+
+    .introduction >  div > h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .introduction > div > p {
+        padding: 10px;
+    }
+
+    .curiosities {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .hobbies {
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .hobbies > h2, .top5 > h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .curiosities > .hobbies > p > span, .curiosities > .top5 > p > span {
+        width: 15vw;
+    }
+
+    footer {
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer > nav {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 509px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1 {
+        width: auto;
+        font-size: 1.5em;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .introduction {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .curiosities {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        margin-bottom: 0px;
+    }   
+
+    .hobbies > h2, .top5 > h2 {
+        display: flex;
+        
+    }
+
+    .curiosities > .hobbies > p > span, .curiosities > .top5 > p > span {
+        width: 70vw;
+        height: 10vh;
+        margin-bottom: 10px;
+        background-image: none;
+    }
+
+    .top5 > p > span > a {
+        color: black;
+    }
+
+    .curiosities > .hobbies > p, .curiosities > .top5 > p {
+        display: flex;
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: center;
+    }   
+
+    .feedback {
+        padding: 10px;
+    }
+
+    button {
+        width: 30vw;
+    }
+
+    footer {
+        height: 110px;
+    }
+
+    footer > nav {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 429px) {
+    .comment {
+    
+    }
+}
