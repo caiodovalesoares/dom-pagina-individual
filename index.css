@@ -414,9 +414,3 @@ footer > nav > p img {
         align-items: center;
     }
 }
-
-@media (max-width: 429px) {
-    .comment {
-    
-    }
-}
